@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Hemigram</string>
+    <string name="registerTitle">Register</string>
+    <string name="registerUserPhotoDescription">UserPhoto</string>
+    <string name="usernamePlaceholder">Username</string>
+    <string name="emailPlaceholder">Email</string>
+    <string name="passwordPlaceholder">Password</string>
+    <string name="agreeToTermsAndConditions"><![CDATA[I agree to the Terms & Conditions]]></string>
+    <string name="submitButton">Submit</string>
+    <string name="alreadyHaveAccount">Already have an account? Signin</string>
+    <string name="loginTitle">Login</string>
+    <string name="dontHaveAccount">Don\'t have an account? Signup</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="settingUsername">Israel Israeli</string>
+    <string name="settingsEmail">israeli@gmail.com</string>
+    <string name="editProfileButton">Edit Profile</string>
+    <string name="logoutBtn">Logout</string>
+    <string name="notificationText">Notification</string>
+    <string name="darkmodeText">Dark Mode</string>
+    <string name="themeText">Theme</string>
+    <string name="themesTitle">themesTitle</string>
 </resources>
