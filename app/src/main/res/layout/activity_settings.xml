@@ -12,14 +12,14 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/settingsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="10dp"
-            android:text="Settings"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:text="@string/settingsTitle"
+            android:textSize="20sp"
+            android:textColor="@color/defaultText"/>
     </RelativeLayout>
 
     <ScrollView
@@ -33,32 +33,33 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:src="@drawable/placeholderProfilePicture"
-                android:layout_marginTop="10dp"></ImageView>
+                android:src="@drawable/placeholderprofilepicture"
+                android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="Israel Israeli"
+                android:text="@string/settingUsername"
                 android:textSize="22sp"
-                android:textStyle="bold">
+                android:textStyle="bold"
+                android:textColor="@color/defaultText">
             </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="israeli@gmail.com"
+                android:text="@string/settingsEmail"
                 android:textSize="12sp"
->
+                android:textColor="@color/defaultText">
             </TextView>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/editProfileButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Edit Profile"
+                android:text="@string/editProfileButton"
                 android:layout_marginVertical="20dp"/>
 
             <androidx.cardview.widget.CardView
@@ -85,7 +86,8 @@
                             android:id="@+id/notificationLogo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/baseline_notifications_24" />
+                            app:srcCompat="@drawable/baseline_notifications_24"
+                            android:layout_centerVertical="true"/>
 
                         <TextView
                             android:id="@+id/notificationText"
@@ -93,9 +95,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_toEndOf="@+id/notificationLogo"
-                            android:text="Notification" />
+                            android:text="@string/notificationText"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/defaultText"/>
 
-                        <Switch
+                        <androidx.appcompat.widget.SwitchCompat
                             android:id="@+id/notificationSwitch"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -109,24 +113,27 @@
                         android:layout_marginVertical="10dp">
 
                         <ImageView
-                            android:id="@+id/notificationLogo"
+                            android:id="@+id/notificationLogo2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/baseline_notifications_24" />
+                            app:srcCompat="@drawable/baseline_notifications_24"
+                            android:layout_centerVertical="true"/>
 
                         <TextView
-                            android:id="@+id/notificationText"
+                            android:id="@+id/notificationText2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_toEndOf="@+id/notificationLogo"
-                            android:text="Notification" />
+                            android:layout_toEndOf="@+id/notificationLogo2"
+                            android:text="@string/notificationText"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/defaultText"/>
 
-                        <Switch
-                            android:id="@+id/notificationSwitch"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/notificationSwitch2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true" />
+                            android:layout_alignParentEnd="true"/>
 
                     </RelativeLayout>
 
@@ -140,18 +147,21 @@
                             android:id="@+id/darkmodeLogo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
                             app:srcCompat="@drawable/baseline_dark_mode_24" />
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/darkmodeText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:layout_toEndOf="@+id/darkmodeLogo"
-                            android:text="Dark Mode" />
+                            android:text="@string/darkmodeText"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/defaultText"/>
 
-                        <Switch
-                            android:id="@+id/switch1"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/darkmodeSwitch"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true" />
@@ -179,21 +189,24 @@
                         android:layout_marginVertical="10dp">
 
                         <ImageView
-                            android:id="@+id/notificationLogo"
+                            android:id="@+id/notificationLogo3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
                             app:srcCompat="@drawable/baseline_notifications_24" />
 
                         <TextView
-                            android:id="@+id/notificationText"
+                            android:id="@+id/notificationText3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_toEndOf="@+id/notificationLogo"
-                            android:text="Notification" />
+                            android:layout_toEndOf="@+id/notificationLogo3"
+                            android:text="@string/notificationText"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/defaultText"/>
 
-                        <Switch
-                            android:id="@+id/notificationSwitch"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/notificationSwitch3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true" />
@@ -206,21 +219,24 @@
                         android:layout_marginVertical="10dp">
 
                         <ImageView
-                            android:id="@+id/notificationLogo"
+                            android:id="@+id/notificationLogo4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
                             app:srcCompat="@drawable/baseline_notifications_24" />
 
                         <TextView
-                            android:id="@+id/notificationText"
+                            android:id="@+id/notificationText4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_toEndOf="@+id/notificationLogo"
-                            android:text="Notification" />
+                            android:layout_toEndOf="@+id/notificationLogo4"
+                            android:text="@string/notificationText"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/defaultText"/>
 
-                        <Switch
-                            android:id="@+id/notificationSwitch"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/notificationSwitch4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true" />
@@ -234,21 +250,24 @@
                         android:layout_marginVertical="10dp">
 
                         <ImageView
-                            android:id="@+id/darkmodeLogo"
+                            android:id="@+id/darkmodeLogo2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
                             app:srcCompat="@drawable/baseline_dark_mode_24" />
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/darkmodeText2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
-                            android:layout_toEndOf="@+id/darkmodeLogo"
-                            android:text="Dark Mode" />
+                            android:layout_toEndOf="@+id/darkmodeLogo2"
+                            android:layout_centerVertical="true"
+                            android:text="@string/darkmodeText"
+                            android:textColor="@color/defaultText"/>
 
-                        <Switch
-                            android:id="@+id/switch1"
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/darkmodeSwitch2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true" />
@@ -275,72 +294,27 @@
                         android:layout_marginHorizontal="30dp"
                         android:layout_marginVertical="10dp">
                         <ImageView
-                            android:id="@+id/notificationLogo"
+                            android:id="@+id/themeLogo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/baseline_color_lens_24" />
                         <TextView
-                            android:id="@+id/notificationText1"
+                            android:id="@+id/themeText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Theme"
-                            android:layout_toEndOf="@+id/notificationLogo"
-                            android:layout_marginStart="10dp"/>
+                            android:text="@string/themeText"
+                            android:layout_toEndOf="@+id/themeLogo"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/defaultText"/>
                         <ImageView
-                            android:id="@+id/write"
+                            android:id="@+id/right"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:srcCompat="@drawable/baseline_chevron_right_24"
                             android:layout_alignParentEnd="true"/>
                     </RelativeLayout>
-                    <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                        android:layout_marginVertical="10dp">
-                    <ImageView
-                        android:id="@+id/notificationLogo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/baseline_color_lens_24" />
-                    <TextView
-                        android:id="@+id/notificationText1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Theme"
-                        android:layout_toEndOf="@+id/notificationLogo"
-                        android:layout_marginStart="10dp"/>
-                    <ImageView
-                        android:id="@+id/write"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/baseline_chevron_right_24"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
-                    <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                        android:layout_marginVertical="10dp">
-                    <ImageView
-                        android:id="@+id/notificationLogo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/baseline_color_lens_24" />
-                    <TextView
-                        android:id="@+id/notificationText1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Theme"
-                        android:layout_toEndOf="@+id/notificationLogo"
-                        android:layout_marginStart="10dp"/>
-                    <ImageView
-                        android:id="@+id/write"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/baseline_chevron_right_24"
-                        android:layout_alignParentEnd="true"/>
-                </RelativeLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -350,7 +324,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Logout"
+                android:text="@string/logoutBtn"
                 android:layout_marginVertical="20dp"
                 android:backgroundTint="#b23b3b "/>
         </LinearLayout>

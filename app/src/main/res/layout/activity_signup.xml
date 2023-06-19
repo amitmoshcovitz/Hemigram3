@@ -23,28 +23,29 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/registerTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Register"
-                android:textSize="30dp"
+                android:text="@string/registerTitle"
+                android:textSize="30sp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="10dp"/>
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/registerUserPhoto"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                app:srcCompat="@drawable/baseline_account_circle_24"/>
+                app:srcCompat="@drawable/baseline_account_circle_24"
+                android:contentDescription="@string/registerUserPhotoDescription" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/registerUsernameField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text"
-                android:hint="Username"
+                android:hint="@string/usernamePlaceholder"
                 android:layout_margin="10dp"
                 android:minHeight="48dp"
                 android:drawableStart="@drawable/baseline_account_circle_24"
@@ -52,24 +53,25 @@
 
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/registerEmailField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="@string/emailPlaceholder"
                 android:layout_margin="10dp"
                 android:minHeight="48dp"
                 android:drawableStart="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/registerPasswordField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:hint="Password"
+                android:hint="@string/passwordPlaceholder"
                 android:layout_margin="10dp"
                 android:minHeight="48dp"
                 android:drawableStart="@drawable/baseline_lock_24"
@@ -79,25 +81,25 @@
 
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/registerTermsCheckbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I agree to the Terms &amp; Conditions"
+                android:text="@string/agreeToTermsAndConditions"
                 android:layout_margin="10dp"/>
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/registerSubmitButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Submit"
+                android:text="@string/submitButton"
                 android:layout_marginHorizontal="10dp"
                 android:backgroundTint="#3868c2" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/alreadyHaveAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Already have an account? Signin"
+                android:text="@string/alreadyHaveAccount"
                 android:gravity="center"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="10dp"/>
