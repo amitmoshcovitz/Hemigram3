@@ -17,6 +17,18 @@ public class Settings extends AppCompatActivity {
 
 
         androidx.appcompat.widget.SwitchCompat darkmodeSwitch = findViewById(R.id.darkmodeSwitch);
+        int nightModeFlags = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+
+        switch(nightModeFlags) {
+            case Configuration.UI_MODE_NIGHT_YES:
+                darkmodeSwitch.setChecked(true);
+                break;
+            case Configuration.UI_MODE_NIGHT_NO:
+            case Configuration.UI_MODE_NIGHT_UNDEFINED:
+                darkmodeSwitch.setChecked(false);
+                break;
+        }
+
         darkmodeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
